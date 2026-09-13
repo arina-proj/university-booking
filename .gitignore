@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+package-lock.json.bak
+
+# builds
+dist/
+build/
+
+# база данных SQLite (в ней пароли и брони!)
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# env
+.env
+.env.local
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# логи
+*.log
+npm-debug.log*

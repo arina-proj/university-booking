@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --omit=dev
+
+COPY src ./src
+
+ENV DATA_DIR=/data
+RUN mkdir -p /data
+VOLUME ["/data"]
+
+EXPOSE 4000
+CMD ["node", "src/server.js"]
