@@ -96,9 +96,18 @@ input:focus, select:focus { outline: none; border-color: #6366f1; }
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 16px;
 }
-.room-card { text-align: center; }
+.room-card { text-align: center; display: flex; flex-direction: column;}
 .room-number { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
 .room-info { color: #4b5563; margin-bottom: 12px; }
+.room-hours {
+  color: #4b5563;
+  font-size: 13px;
+  margin: 8px auto 12px;
+  padding: 4px 10px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  display: inline-block;
+}
 .badge {
   display: inline-block;
   padding: 4px 10px;
